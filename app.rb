@@ -1,12 +1,15 @@
 require 'sinatra'
 
-
 get '/' do
-  # "hello world"
-  erb :git_info
+   
+ erb :git_info  
 end
 
-post '/details' do
+get '/fav_food' do
+"pizza"
+end
+
+post '/name' do
  name = params[:name]
- "Hello #{name}"
+"Welcome #{name}"
 end
